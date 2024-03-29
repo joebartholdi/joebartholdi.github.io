@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Joseph Bartholdi</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div id="dhead" class="container">
+    <div class="row">
+        <div id="dpic">
+            <img src="{{ url_for('static', filename='assets/me1.jpg') }}" class="ppic">
+        </div>
+        <div id="ddesc">
+            <h1>Joseph Bartholdi</h1>
+            <h2>Aspiring Cyber Security Professional</h2>
+            <h2>Check Me Out!</h2>
+            <div id="dico">
+              <a href="https://www.linkedin.com/in/joseph-bartholdi-abc123" target="_blank"><img src="{{ url_for('static', filename='assets/linkedin.svg') }}" class="iico"></a>
+              <a href="https://github.com/joebartholdi" target="_blank"><img src="{{ url_for('static', filename='assets/25231.png') }}" class="iico"></a>
+              <a href="mailto:josephthomasbartholdi@gmail.com?subject=Hello&body=Greetings" target="_blank"><img src="{{ url_for('static', filename='assets/email.svg') }}" class="iico"></a>
+              <a href="{{ url_for('static', filename='assets/BartholdiResumeApril2024.pdf') }}" download="BartholdiResume.pdf" target="_blank"> <img src="{{ url_for('static', filename='assets/resume.png') }}" class="iico"></a>            
+          </div>
+    </
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div id="history" class="container">
+  <div class="entry row">
+    <div class="timespan">August 2020 - May 2024</div>
+    <div class="ico">
+        <div class="entry-dot"></div>
+        <img src="{{ url_for('static', filename='assets/marist.png') }}">
+    </div>
+    <div class="desc">
+      As an Information Systems and Technology major at Marist College, with minors in Cyber Security and Business, I am poised to graduate Summa Cum Laude in May 2024. My academic journey has been marked by a deep engagement with the evolving landscape of technology, a steadfast commitment to excellence, and a keen interest in the intersections of digital security and business innovation. This comprehensive educational experience has equipped me with a robust foundation in both the technical and strategic aspects of the field, preparing me to make meaningful contributions to the tech industry. My time at Marist has not only honed my skills but also fostered a profound appreciation for the transformative power of technology in addressing contemporary challenges. *GPA 3.93*
+      <h2>Relevant Coursework</h2>
+      <div class="coursework-columns">
+        <ul>
+          <li>Intro to Cyber Security</li>
+          <li>UNIX</li>
+          <li>Data Communications</li>
+          <li>Mobile Security</li>
+          <li>Hacking and Penetration Testing</li>
+          <li>Internetworking</li>
+          <li>Marist Senior Capping</li>
+        </ul>
+        <ul>
+          <li>Intro to Programming</li>
+          <li>Software Development I </li>
+          <li>Software Development II </li>
+          <li>Software Systems & Analysis </li>
+          <li>Decision Support Systems </li>
+          <li>System Design </li>
+          <li>Architecture + Hardware + Systems Software  </li>
+        </ul> 
+      </div>
+    </div>
+</div>
+<style>
+.coursework-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.coursework-columns ul {
+  width: 50%;
+  padding-inline-start: 20px; /* Adjusts the padding for the bullet points */
+}
+</style>
+
+<div class="entry row">
+  <div class="timespan">June 2023 - March 2024</div>
+  <div class="ico">
+      <div class="entry-dot"></div>
+      <img src="{{ url_for('static', filename='assets/pkfod.jpg') }}">
+  </div>
+  <div class="desc">
+    Intern at PKFOD, a respected accounting and advisory firm known for its comprehensive approach to financial services and commitment to leveraging cutting-edge technology, I delved deep into the realm of cybersecurity. My journey began with fundamental tasks, such as observing live penetration tests, evaluating new applications for security vulnerabilities, and undertaking essential documentation efforts. However, my rapid acquisition of specialized knowledge and a demonstrable flair for cybersecurity soon led to a significant expansion of my role. PKFOD, recognizing my potential, extended my responsibilities to include a direct engagement in the development and implementation of robust security protocols, analysis, and enhancement of network defenses, and participation in high-level strategic security discussions. Working alongside a network of seasoned cybersecurity experts across the country, I contributed to safeguarding the firm’s expansive digital environment, playing a crucial role in preempting threats and ensuring operational integrity in the face of evolving cyber risks. This opportunity not only allowed me to refine my technical and analytical skills but also afforded me a unique insight into the critical importance of cybersecurity within the framework of modern financial advisory services, cementing my dedication to advancing in this dynamic field. 
+      <a href="{{ url_for('static', filename='assets/Recommendation Letter JB.docx') }}" download="Recommendation Letter JB.docx">View Recommendation Letter</a>
+      <!-- Dropdown Button -->
+      <button class="dropdown-btn">PKF Projects <span class="arrow">&#9660;</span></button>
+      <!-- Collapsible Content -->
+      <div class="dropdown-container">
+          <p>- <strong>Password Cracking Automation Script </strong>Programmed a Python-based automation script that enhances the efficiency of password hash cracking by integrating with Hashcat, a leading password recovery tool. This innovative solution has a GUI that offers users a tailored password-cracking journey, enabling many wordlists and rules across various hash types. Designed for sustained operations, the script autonomously processes until all selected hashes, wordlists, and rules are exhaustively utilized. A distinguishing feature of this project is its capability to organize cracked passwords into timestamped output files alongside their corresponding hashes, allowing for simple tracking and analysis. Additionally, I added real-time alerts via Microsoft Teams to ensure users are promptly notified upon completing each cracking iteration.</p>
+          <!-- Add more projects as needed -->
+          <p>- <strong>Password Cracking Rig Build:</strong> Tasked with optimizing the cybersecurity team's operational efficiency and reducing overhead costs, I led the development of an in-house hash cracking rig that matches the performance of our previously utilized high-speed AWS server. Recognizing the financial implications of relying on a server costing approximately $1,000 per hour, I embarked on a comprehensive research and development project. This endeavor involved meticulously selecting components to construct a budget-conscious, highly effective build that delivers equivalent hash-cracking capabilities. Upon finalizing the design, I assembled the rig at our office, ensuring it met our rigorous performance benchmarks. To maximize accessibility and utility, I integrated remote access functionality, enabling seamless operation alongside my Python-based automation script with efficient rainbow table creation. This project significantly lowered operational expenses, made password cracking an in-house task, and provided the team with a robust, on-demand resource for advanced password recovery tasks.</p>
+          
+      </div>
+  </div>
+</div>
+
+
+<div class="entry row">
+  <div class="timespan">June 2022 - August 2022</div>
+  <div class="ico">
+      <div class="entry-dot"></div>
+      <img src="{{ url_for('static', filename='assets/mlb.jpg') }}">
+  </div>
+  <div class="desc">
+    Selected for a prestigious information security internship at Major League Baseball (MLB), I was entrusted with pivotal tasks aimed at strengthening the league's cybersecurity framework. My role was multifaceted, covering the meticulous management of user permissions to fortify access control systems, the crafting of custom scripts designed to streamline and automate crucial security operations, and the development and upkeep of vital security documentation that served as the backbone for the organization's cyber defense strategies. Additionally, my proactive engagement in rigorous application testing was instrumental in pinpointing and mitigating potential vulnerabilities, thereby enhancing the overall security posture of MLB's extensive digital network. This dynamic position not only sharpened my technical prowess and analytical capabilities but also culminated in my achievement of Sumo Logic certification, underscoring my unwavering dedication to continuous learning and excellence in the cybersecurity domain. My efforts were directly aligned with MLB's overarching mission to protect its digital assets and uphold the highest standards of information security, contributing significantly to the integrity and resilience of the league's technological infrastructure.
+    <!-- Your existing content -->
+
+    <!-- Dropdown Button for MLB Projects -->
+    <button class="dropdown-btn">MLB Projects <span class="arrow">&#9660;</span></button>
+    <!-- Collapsible Content for MLB Projects -->
+    <div class="dropdown-container">
+        <p>- <strong>HQ Networking:</strong> I worked closely with a network engineer on a project to enhance and upgrade wireless connectivity. We aimed to meticulously configure and test over 100 standard and mobile access points throughout the headquarters using Meraki, ensuring complete coverage without signal overlap or dead zones while prioritizing the security of these connections. Through comprehensive testing and strategic placement, we optimized network performance and reliability, significantly improving the wireless experience for all employees. This project enhanced my practical skills in wireless network optimization. It contributed to MLB's operational efficiency by facilitating a seamless and productive technological environment that adhered to the organization’s safety and security policies. </p>
+        <p>- <strong>Signal Science Automation Script:</strong> Crafted a Python script to fetch web request data from the Signal Sciences API for a specific site over the last 24 hours. It calculates the start and end times to cover the previous full day, rounded to the nearest hour, ensuring the data fetched is for a precise and recent timeframe. Utilizing the Signal Sciences API, it systematically collects web request data, handling the iteration by following the 'next' URL provided in each API response until all data within the timeframe is retrieved. The aggregated data is then compiled into a DataFrame using Pandas, which outputs this collected data into a CSV file. The file is named uniquely based on the site name and the time range covered, providing a structured and accessible record of web request logs for further analysis or archival purposes. The information obtained from this script includes the timestamp, client IP address, requested URL, HTTP method, response status code, user agent, referring URL, and server response time. This information is important for analysts to monitor for anomalies and other cyber threats.</p>
+        <!-- Add more projects as needed -->
+    </div>
+  </div>
+</div>
+
+    <!-- Repeat for other entries -->
+</div>
+
+</body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      // Selects all dropdown buttons
+      var dropdowns = document.querySelectorAll(".dropdown-btn");
+  
+      dropdowns.forEach(function(dropdown) {
+          dropdown.addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+              } else {
+                  dropdownContent.style.display = "block";
+              }
+          });
+      });
+  });
+  </script>
+  
+  
